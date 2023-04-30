@@ -6,7 +6,7 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/ellisjj/.zshrc'
+zstyle :compinstall filename ~/.zshrc
 
 autoload -Uz compinit
 compinit
@@ -71,25 +71,9 @@ mkcd() {
 #     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
 #         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
-#export RPROMPT=%(?.%F{#00FF00}✔.%F{#FF0000}%f%K{#FF0000}%B%F{#ffac00} %? ✘ %f%k)
-#autoload -U colors && colors
-#autoload -Uz vcs_info
-#precmd() { vcs_info }
-#zstyle ':vcs_info:git:*' formats ' %r on  %b'
-
-#blue="#0087af"
-#teal="#008080"
-#red="#f54545"
-#blue=$red
-#export PROMPT="%K{white}%F{$blue}  %f%k%K{$blue}%F{white}%f%k%K{$blue} %~ ${vcs_info_msg_0_}%k%K{default}%F{$blue}%f%k
-#%F{$blue}➜%f "
-#setopt PROMPT_SUBST
-#export PROMPT='%K{white}%F{$blue}  %f%k%K{$blue}%F{white}%f%k%K{$blue} %1~ ${vcs_info_msg_0_} %k%K{default}%F{$blue}%f%k '
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/ellisjj/.sdkman"
-[[ -s "/home/ellisjj/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ellisjj/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
 alias s="kitty +kitten ssh"
-
