@@ -1,0 +1,43 @@
+[
+	{
+		"command": "vscode-neovim.compositeEscape1",
+		"key": "j",
+		"when": "neovim.mode == insert",
+		"args": "j"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "cursorEnd"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "deleteWordLeft",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.quickOpen",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "cursorRight",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "-editor.action.toggleTabFocusMode"
+	},
+	{
+		"key": "ctrl+Right",
+		"command": "workbench.action.terminal.focusNext"
+	},
+	{
+		"key": "ctrl+Left",
+		"command": "workbench.action.terminal.focusPrevious"
+	}
+]

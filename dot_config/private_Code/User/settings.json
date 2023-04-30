@@ -1,0 +1,77 @@
+{
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true,
+    "**/.flow": true
+  },
+  "editor.cursorBlinking": "solid",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "editor.tabCompletion": "on",
+  "go.autocompleteUnimportedPackages": true,
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.suggestSelection": "first",
+  "typescript.suggest.paths": false,
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 8,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "DaddyTimeMono NF",
+  "terminal.integrated.fontSize": 18,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/.flow": true
+  },
+  "[scala]": {
+    "editor.suggestSelection": "first",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "python.linting.pycodestyleEnabled": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.pycodestyleArgs": [
+    "--max-line-length=120"
+  ],
+  "r.rterm.linux": "/home/ellisjj/.local/bin/radian",
+  "r.bracketedPaste": true,
+  "r.alwaysUseActiveTerminal": true,
+  "r.sessionWatcher": true,
+  "r.plot.useHttpgd": true,
+  "sql-formatter.uppercase": true,
+  "redhat.telemetry.enabled": false,
+  "vim.foldfix": true,
+  "path-intellisense.absolutePathToWorkspace": false,
+  "autoAlign.associations": {
+    "csv": ",",
+    "bsv": "|",
+    "go": ":"
+  },
+  "projectManager.git.baseFolders": [
+    "/home/ellisjj/src"
+  ],
+  "window.zoomLevel": -1,
+}

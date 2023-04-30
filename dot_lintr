@@ -1,0 +1,6 @@
+#linters: lintr::lint_package(linters=subset(lintr::default_linters,!lintr::default_linters %in% lintr::default_linters["object_usage_linter"]))
+linters: with_defaults(
+        object_usage_linter = NULL, 
+        object_name_linter(styles = c("snake_case", "UPPERCASE", "CamelCase")),
+        line_length_linter(100)
+)

@@ -1,0 +1,95 @@
+# Lines configured by zsh-newuser-install
+#export TERM=xterm-256color
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/ellisjj/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+if [[ -e /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+  . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+ZSH_THEME="crcandy"
+export ZSH="$HOME/.oh-my-zsh"
+#plugins=(colorize)
+plugins=(git docker)
+source $ZSH/oh-my-zsh.sh
+
+addpath() {
+	local directory="$1"
+  if [[ -e "$directory" ]]; then
+    if ! [[ "$PATH" =~ "${directory}:" ]]; then
+      PATH="${directory}:$PATH"
+    fi
+  fi
+	export PATH
+}
+
+addpath ~/.local/bin
+addpath ~/go/bin
+addpath /usr/local/go/bin
+addpath ~/src/gitlab.com/atgc/atgc/target/deploy/bin
+addpath ~/src/github.com/jje42/tso
+
+alias o="less -SR"
+alias qstat="ssh lyra qstat"
+alias qsub="ssh lyra qsub"
+alias qdel="ssh lyra qdel"
+alias ls=exa
+alias ll='exa -lg'
+
+export EDITOR=nvim
+export GOPATH="$HOME/go"
+
+bindkey '^ ' autosuggest-accept
+
+docker-list-tags () {
+	http "https://hub.docker.com/v2/repositories/$1/tags" | jq -r '.results[].name'
+}
+
+vi() {
+	if [ -z $@ ]; then
+		nvim $(fzf)
+	else
+		nvim $@
+	fi
+}
+
+mkcd() {
+  mkdir -p -- "$1" && cd -P -- "$1"
+}
+
+# BASE16_SHELL="$HOME/.config/base16-shell/"
+# [ -n "$PS1" ] && \
+#     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+#         eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+#export RPROMPT=%(?.%F{#00FF00}✔.%F{#FF0000}%f%K{#FF0000}%B%F{#ffac00} %? ✘ %f%k)
+#autoload -U colors && colors
+#autoload -Uz vcs_info
+#precmd() { vcs_info }
+#zstyle ':vcs_info:git:*' formats ' %r on  %b'
+
+#blue="#0087af"
+#teal="#008080"
+#red="#f54545"
+#blue=$red
+#export PROMPT="%K{white}%F{$blue}  %f%k%K{$blue}%F{white}%f%k%K{$blue} %~ ${vcs_info_msg_0_}%k%K{default}%F{$blue}%f%k
+#%F{$blue}➜%f "
+#setopt PROMPT_SUBST
+#export PROMPT='%K{white}%F{$blue}  %f%k%K{$blue}%F{white}%f%k%K{$blue} %1~ ${vcs_info_msg_0_} %k%K{default}%F{$blue}%f%k '
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/ellisjj/.sdkman"
+[[ -s "/home/ellisjj/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ellisjj/.sdkman/bin/sdkman-init.sh"
+
+
+alias s="kitty +kitten ssh"
+
