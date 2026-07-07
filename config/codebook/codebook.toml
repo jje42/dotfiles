@@ -1,0 +1,12 @@
+dictionaries = ["en_gb"]
+words = [
+    "bam",
+    "clinvar",
+    "genomic",
+    "htslib",
+    "pysam",
+    "unmapped",
+    "vaf",
+    "vafs",
+    "voi",
+]

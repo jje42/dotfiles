@@ -1,0 +1,22 @@
+[user]
+	name = 
+	email = 
+; [url "ssh://git@github.com/"]
+; 	insteadOf = https://github.com/
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[safe]
+	directory = /workspaces/inventory
+[rebase]
+	updateRefs = true
+[pull]
+	ff = only
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

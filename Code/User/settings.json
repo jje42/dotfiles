@@ -1,0 +1,193 @@
+{
+  "[git-commit]": {
+    "editor.rulers": [
+      72
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 72
+  },
+  "[markdown]": {
+    // "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 80,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+  },
+  // "editor.fontFamily": "DaddyTimeMono Nerd Font",
+  // "editor.fontFamily": "Monaco Regular",
+  // "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "BlexMono Nerd Font Mono",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "350",
+  "workbench.fontAliasing": "antialiased",
+  "terminal.integrated.copyOnSelection": true,
+  // "terminal.integrated.fontFamily": "DaddyTimeMono Nerd Font",
+  "terminal.integrated.fontFamily": "BlexMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.tabSize": 2,
+    "editor.indentSize": "tabSize"
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "redhat.telemetry.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "vim.foldfix": true,
+  "[r]": {
+    "editor.tabSize": 2
+  },
+  "[go]": {
+    "editor.tabSize": 8
+  },
+  // "go.useLanguageServer": true,
+  // "gopls": {
+  //   "ui.semanticTokens": true,
+  //   "formatting.gofumpt": true
+  // },
+  // "go.lintTool": "golangci-lint",
+  // "go.toolsManagement.autoUpdate": true,
+  // "go.formatTool": "custom",
+  // "go.alternateTools": {
+  //   "customFormatter": "golines",
+  // },
+  // "go.formatFlags": [
+  //   "--base-formatter=gofumpt",
+  //   "--max-len=150"
+  // ],
+  "terminal.external.osxExec": "WezTerm.app",
+  "remote.SSH.configFile": "$HOME/.ssh/config",
+  // "editor.wordWrap": "off",
+  // "editor.wordWrap": "wordWrapColumn",
+  // "editor.wordWrapColumn": 80,
+  "editor.rulers": [
+    80
+  ],
+  "r.plot.defaults.fullWindowMode": true,
+  "r.bracketedPaste": true,
+  "window.zoomLevel": 2,
+  "projectManager.git.baseFolders": [
+    "$HOME/src"
+  ],
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "git.confirmSync": false,
+  "git.blame.editorDecoration.enabled": false,
+  // "githubPullRequests.pushBranch": "always",
+  // "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  // "cmake.showOptionsMovedNotification": false,
+  // "coverage-gutters.coverageFileNames": [
+  //   "target/debug/coverage/tests.lcov",
+  //   "lcov.info",
+  //   "cov.xml",
+  //   "coverage.xml",
+  //   "cobertura.xml",
+  //   "jacoco.xml",
+  //   "coverage.cobertura.xml"
+  // ],
+  // "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+  // "python.analysis.typeCheckingMode": "standard",
+  // "docker.extension.enableComposeLanguageServer": false,
+  // "markdowntable.formatOnSave": true,
+  // "markdowntable.showMenu.csvToTable": true,
+  // "nextflow.formatting.sortDeclarations": true,
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "[nextflow-config]": {
+    // The nextflow formatter removes a lot of comments, and this can break
+    // things (e.g., release-please). Disable until Seqera get their act
+    // together.
+    "editor.tabSize": 2,
+    "editor.indentSize": "tabSize",
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "nextflow.nextflow"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.indentSize": "tabSize"
+  },
+  "[github-actions-workflow]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "quarto": false,
+    "rust": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "rust-analyzer.restartServerOnConfigChange": true,
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.check.extraArgs": [
+    "--all-features",
+    "--tests"
+  ],
+  "githubPullRequests.pushBranch": "always",
+  "cSpell.words": [
+    "FASTA",
+    "Bedcov",
+    "mapq",
+    "htslib",
+    "ncpus",
+    "chrom",
+    "testdata"
+  ],
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "terminal.integrated.focusAfterRun": "terminal",
+  "chat.tools.terminal.autoApprove": {
+    "cargo test": true,
+    "cargo add": true,
+    "cargo build": true,
+    "cargo run": true,
+    "cp": true,
+    "./project-builder": true,
+    "cargo remove": true,
+    "git checkout": true,
+    "cargo fmt": true,
+    "cargo check": true
+  },
+  "quarto.render.renderOnSave": true,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "chat.viewSessions.orientation": "stacked",
+  "git.inputValidation": true,
+  "nextflow.errorReportingMode": "paranoid",
+  "chat.tools.urls.autoApprove": {
+    "https://gatk.broadinstitute.org": true,
+    "https://en.wikipedia.org": true,
+    "https://github.com": {
+      "approveRequest": false,
+      "approveResponse": true
+    },
+    "https://broadinstitute.github.io": true,
+    "https://www.htslib.org": true,
+    "https://samtools.github.io": true
+  },
+  "python.languageServer": "Default",
+}

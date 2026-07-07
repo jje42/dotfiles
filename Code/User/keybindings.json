@@ -1,0 +1,16 @@
+// Place your key bindings in this file to override the defaults
+[
+  // {
+  //     "key": "ctrl+h",
+  //     "commond": "deleteWordLeft",
+  //     "when": "terminalFocus"
+  // }
+  {
+    "key": "ctrl+Right",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+Left",
+    "command": "workbench.action.terminal.focusPrevious"
+  }
+]

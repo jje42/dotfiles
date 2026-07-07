@@ -1,0 +1,30 @@
+[preview]
+max_width = 1000
+max_height = 1000
+
+[opener]
+visidata = [
+    { run = 'vd "$1"', block = true, desc = "visidata" }
+]
+vscode = [
+    { run = 'code "$1"', block = true, desc = "VSCode" }
+]
+bcftools = [
+    { run = 'bcftools view "$1" | less -S', block = true, decs="bcftools" }
+]
+zless = [
+    { run = 'zless "$1"', block = true, desc = "zless" }
+]
+
+[open]
+prepend_rules = [
+    { mime = "text/csv", use = ["visidata", "edit"] },
+    { url = "*.csv", use = ["visidata", "edit"] },
+    { url = "*.tsv", use = ["visidata", "edit"] },
+    { mime = "text/plain", use = ["edit", "vscode"] },
+    { mime = "text/*", use = ["edit", "vscode"] },
+    { mime = "application/json", use = ["edit", "vscode"] },
+    { url = "*.vcf.gz", use = ["bcftools"] },
+    { url = "*.fastq.gz", use = ["zless"] },
+    { url = "*.fq.gz", use = ["zless"] },
+]
